@@ -18,6 +18,19 @@
     align-items: center;
     justify-content: center;
 }
+.logo:hover{
+    animation-name: giro;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+
+@keyframes giro{
+    100%{
+        transform: rotate(360deg)
+    }
+}
+
+
 .logo img{
     display: flex;
     height: 50px;
@@ -74,6 +87,11 @@
     width: 200px;
     height: auto;
     margin: 10px;
+    transition: height 2s, width 2s;
+}
+.actividades img:hover{
+    height: auto;
+    width: 250px;
 }
 .actividades-texto{
     margin: 3px;
@@ -82,13 +100,6 @@
     margin-bottom: 2px;
     font-weight: 600;
 }
-
-
-
-
-
-
-
 
 
 .footer{
